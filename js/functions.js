@@ -239,7 +239,7 @@ window.onload = function () {
       `<a id="initial" href="#">Back to home</a>
       <br><br><h2>All League Events</h2><br><br>`;
 
-    fetch('https://api.github.com/repos/yashkaps/yashkaps.github.io/contents/ttleague/data/txt_files?ref=master')
+    fetch('https://api.github.com/repos/yashkaps/ttleague/contents/data/txt_files')
       .then(response => response.json())
       .then(data => {
         var file_objs = data;
